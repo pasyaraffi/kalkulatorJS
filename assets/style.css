@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  width: 300px;
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+#result {
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:nth-child(4n+1),
+button:nth-child(4n+2),
+button:nth-child(4n+3) {
+  background-color: #ddd;
+}
+
+button:nth-child(4n) {
+  background-color: #ff9900;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.history-toggle {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history {
+  margin-top: 10px;
+  background-color: #000; /* Ubah warna background menjadi hitam */
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
